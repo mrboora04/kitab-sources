@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-23T07:12:19.020Z",
+  "checkedAt": "2026-11-23T07:14:30.266Z",
   "sources": {
     "gutenberg": {
       "name": "Project Gutenberg",
@@ -10,59 +10,60 @@
           "label": "Popular",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 130
+          "ms": 72
         },
         {
           "key": "latest",
           "label": "Latest",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 55
+          "ms": 27
         },
         {
           "key": "fiction",
           "label": "Fiction",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 32
+          "ms": 26
         },
         {
           "key": "children",
           "label": "Children",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 34
+          "ms": 26
         },
         {
           "key": "poetry",
           "label": "Poetry",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 46
+          "ms": 26
         },
         {
           "key": "history",
           "label": "History",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 44
+          "ms": 29
         },
         {
           "key": "science",
           "label": "Science",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 40
+          "ms": 29
         }
       ],
       "search": {
         "ok": false,
         "error": "The site answered 403",
-        "ms": 53
+        "ms": 35
       },
       "book": null,
       "ok": false,
-      "working": false,
+      "working": null,
+      "blocked": "The site refuses requests from GitHub's servers, so it cannot be checked from here (phones are not affected)",
       "builtin": true
     },
     "internet-archive": {
@@ -75,7 +76,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 711
+          "ms": 291
         },
         {
           "key": "classics",
@@ -83,20 +84,20 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 502
+          "ms": 148
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 326
+        "ms": 152
       },
       "book": {
         "ok": true,
         "title": "The Kama sutra of Vatsyayana",
         "format": "EPUB",
         "tried": 3,
-        "ms": 12968
+        "ms": 12912
       },
       "ok": true,
       "working": true
@@ -108,14 +109,14 @@
       "search": {
         "ok": true,
         "count": 20,
-        "ms": 963
+        "ms": 900
       },
       "book": {
         "ok": true,
         "title": "A Study of History",
         "format": "EPUB",
         "tried": 1,
-        "ms": 487
+        "ms": 689
       },
       "ok": true,
       "working": true
@@ -130,7 +131,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 245
+          "ms": 292
         },
         {
           "key": "stories",
@@ -138,7 +139,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 141
+          "ms": 79
         },
         {
           "key": "poems",
@@ -146,7 +147,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 152
+          "ms": 74
         },
         {
           "key": "plays",
@@ -154,20 +155,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 152
+          "ms": 78
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 213
+        "ms": 160
       },
       "book": {
         "ok": true,
         "title": "Les Misérables",
         "format": "EPUB",
         "tried": 1,
-        "ms": 1146
+        "ms": 897
       },
       "ok": true,
       "working": true
