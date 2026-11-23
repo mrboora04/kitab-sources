@@ -1,0 +1,13 @@
+{
+  "name": "kitab-sources",
+  "private": true,
+  "type": "module",
+  "description": "Kitab's source list: free, legal book sources (recipes) for the Kitab reader",
+  "scripts": {
+    "check": "node tools/build-index.mjs --check",
+    "live": "node tools/live-check.mjs"
+  },
+  "dependencies": {
+    "linkedom": "0.18.12"
+  }
+}

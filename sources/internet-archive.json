@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "internet-archive",
+  "name": "Free Scanned Books",
+  "version": 4,
+  "lang": "multi",
+  "license": "Free to read scans (Internet Archive)",
+  "site": "https://archive.org/details/texts",
+  "icon": "🏛️",
+  "hosts": [
+    "archive.org"
+  ],
+  "type": "json",
+  "langFilter": {
+    "param": "%20AND%20language%3A({v})",
+    "values": {
+      "en": "eng%20OR%20English",
+      "es": "spa%20OR%20Spanish",
+      "fr": "fre%20OR%20French",
+      "de": "ger%20OR%20German",
+      "it": "ita%20OR%20Italian",
+      "pt": "por%20OR%20Portuguese",
+      "ru": "rus%20OR%20Russian",
+      "zh": "chi%20OR%20Chinese",
+      "ja": "jpn%20OR%20Japanese",
+      "ar": "ara%20OR%20Arabic",
+      "hi": "hin%20OR%20Hindi",
+      "la": "lat%20OR%20Latin"
+    }
+  },
+  "search": {
+    "url": "https://archive.org/advancedsearch.php?q=({q})%20AND%20mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20gutenberg%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29{lang}&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json",
+    "list": "response.docs",
+    "pager": {
+      "total": "response.numFound",
+      "per": 24
+    },
+    "map": {
+      "id": "identifier",
+      "title": "title",
+      "authors": "creator",
+      "cover": {
+        "tpl": "https://archive.org/services/img/{identifier}"
+      }
+    }
+  },
+  "browse": [
+    {
+      "key": "popular",
+      "label": "Most read",
+      "about": "The most read free scans from public and university libraries",
+      "url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20gutenberg%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
+    },
+    {
+      "key": "classics",
+      "label": "Classics",
+      "about": "Old books from the great public libraries",
+      "url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20gutenberg%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
+    }
+  ],
+  "detail": {
+    "url": "https://archive.org/metadata/{identifier}",
+    "summary": "metadata.description",
+    "formats": {
+      "list": "files",
+      "field": "format",
+      "as": {
+        "EPUB": "EPUB",
+        "Text PDF": "PDF",
+        "Additional Text PDF": "PDF",
+        "Image Container PDF": "PDF"
+      },
+      "url": {
+        "tpl": "https://archive.org/download/{identifier}/{name|enc}"
+      }
+    }
+  }
+}
