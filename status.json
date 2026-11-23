@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-23T07:14:30.266Z",
+  "checkedAt": "2026-11-23T07:38:24.541Z",
   "sources": {
     "gutenberg": {
       "name": "Project Gutenberg",
@@ -10,42 +10,42 @@
           "label": "Popular",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 72
+          "ms": 73
         },
         {
           "key": "latest",
           "label": "Latest",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 27
+          "ms": 32
         },
         {
           "key": "fiction",
           "label": "Fiction",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 26
+          "ms": 27
         },
         {
           "key": "children",
           "label": "Children",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 26
+          "ms": 40
         },
         {
           "key": "poetry",
           "label": "Poetry",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 26
+          "ms": 37
         },
         {
           "key": "history",
           "label": "History",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 29
+          "ms": 31
         },
         {
           "key": "science",
@@ -58,7 +58,7 @@
       "search": {
         "ok": false,
         "error": "The site answered 403",
-        "ms": 35
+        "ms": 38
       },
       "book": null,
       "ok": false,
@@ -76,7 +76,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 291
+          "ms": 1168
         },
         {
           "key": "classics",
@@ -84,39 +84,450 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 148
+          "ms": 1009
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 152
+        "ms": 382
       },
       "book": {
         "ok": true,
         "title": "The Kama sutra of Vatsyayana",
         "format": "EPUB",
         "tried": 3,
-        "ms": 12912
+        "ms": 13773
       },
       "ok": true,
       "working": true
     },
     "open-library": {
-      "name": "Open Library (free scans)",
-      "version": 1,
-      "lists": [],
+      "name": "Open Library",
+      "version": 2,
+      "lists": [
+        {
+          "key": "popular",
+          "label": "Most read",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 1008
+        },
+        {
+          "key": "fiction",
+          "label": "Fiction",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 332
+        },
+        {
+          "key": "children",
+          "label": "Children",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 324
+        },
+        {
+          "key": "poetry",
+          "label": "Poetry",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 1044
+        },
+        {
+          "key": "history",
+          "label": "History",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 387
+        },
+        {
+          "key": "science",
+          "label": "Science",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 535
+        },
+        {
+          "key": "philosophy",
+          "label": "Philosophy",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 374
+        }
+      ],
       "search": {
         "ok": true,
-        "count": 20,
-        "ms": 900
+        "count": 24,
+        "ms": 979
       },
       "book": {
         "ok": true,
-        "title": "A Study of History",
+        "title": "The Art of War",
+        "format": "EPUB",
+        "tried": 2,
+        "ms": 12219
+      },
+      "ok": true,
+      "working": true
+    },
+    "openstax": {
+      "name": "OpenStax Textbooks",
+      "version": 1,
+      "lists": [
+        {
+          "key": "all",
+          "label": "All textbooks",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 410
+        },
+        {
+          "key": "new",
+          "label": "Newest",
+          "ok": true,
+          "count": 24,
+          "covers": 24,
+          "ms": 410
+        },
+        {
+          "key": "es",
+          "label": "En español",
+          "ok": true,
+          "count": 11,
+          "covers": 11,
+          "ms": 278
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 3,
+        "ms": 302
+      },
+      "book": {
+        "ok": true,
+        "title": "Additive Manufacturing Essentials",
+        "format": "PDF",
+        "tried": 1,
+        "ms": 54
+      },
+      "ok": true,
+      "working": true
+    },
+    "wikisource-de": {
+      "name": "Wikisource (Deutsch)",
+      "version": 1,
+      "lists": [
+        {
+          "key": "romane",
+          "label": "Romane",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 307
+        },
+        {
+          "key": "maerchen",
+          "label": "Märchen",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 87
+        },
+        {
+          "key": "lyrik",
+          "label": "Lyrik",
+          "ok": false,
+          "error": "the list came back empty",
+          "ms": 72
+        },
+        {
+          "key": "drama",
+          "label": "Drama",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 82
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 24,
+        "ms": 126
+      },
+      "book": {
+        "ok": true,
+        "title": "Das Schloß",
         "format": "EPUB",
         "tried": 1,
-        "ms": 689
+        "ms": 894
+      },
+      "ok": false,
+      "working": true
+    },
+    "wikisource-es": {
+      "name": "Wikisource (Español)",
+      "version": 1,
+      "lists": [
+        {
+          "key": "novelas",
+          "label": "Novelas",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 328
+        },
+        {
+          "key": "cuentos",
+          "label": "Cuentos",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 80
+        },
+        {
+          "key": "poemas",
+          "label": "Poemas",
+          "ok": false,
+          "error": "the list came back empty",
+          "ms": 62
+        },
+        {
+          "key": "teatro",
+          "label": "Teatro",
+          "ok": true,
+          "count": 6,
+          "covers": 0,
+          "ms": 79
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 24,
+        "ms": 129
+      },
+      "book": {
+        "ok": true,
+        "title": "Atalaya de la vida humana",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 780
+      },
+      "ok": false,
+      "working": true
+    },
+    "wikisource-fr": {
+      "name": "Wikisource (Français)",
+      "version": 1,
+      "lists": [
+        {
+          "key": "romans",
+          "label": "Romans",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 287
+        },
+        {
+          "key": "contes",
+          "label": "Contes",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 56
+        },
+        {
+          "key": "poemes",
+          "label": "Poèmes",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 83
+        },
+        {
+          "key": "theatre",
+          "label": "Théâtre",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 85
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 24,
+        "ms": 153
+      },
+      "book": {
+        "ok": true,
+        "title": "Vie et opinions de Tristram Shandy",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 3682
+      },
+      "ok": true,
+      "working": true
+    },
+    "wikisource-it": {
+      "name": "Wikisource (Italiano)",
+      "version": 1,
+      "lists": [
+        {
+          "key": "romanzi",
+          "label": "Romanzi",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 290
+        },
+        {
+          "key": "racconti",
+          "label": "Racconti",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 68
+        },
+        {
+          "key": "poesie",
+          "label": "Poesie",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 90
+        },
+        {
+          "key": "teatro",
+          "label": "Teatro",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 110
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 24,
+        "ms": 105
+      },
+      "book": {
+        "ok": true,
+        "title": "Filocolo",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 4252
+      },
+      "ok": true,
+      "working": true
+    },
+    "wikisource-pt": {
+      "name": "Wikisource (Português)",
+      "version": 1,
+      "lists": [
+        {
+          "key": "romances",
+          "label": "Romances",
+          "ok": true,
+          "count": 1,
+          "covers": 0,
+          "ms": 260
+        },
+        {
+          "key": "contos",
+          "label": "Contos",
+          "ok": true,
+          "count": 6,
+          "covers": 0,
+          "ms": 59
+        },
+        {
+          "key": "poemas",
+          "label": "Poemas",
+          "ok": true,
+          "count": 8,
+          "covers": 0,
+          "ms": 54
+        },
+        {
+          "key": "teatro",
+          "label": "Teatro",
+          "ok": true,
+          "count": 1,
+          "covers": 0,
+          "ms": 61
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 24,
+        "ms": 85
+      },
+      "book": {
+        "ok": true,
+        "title": "Os Noivos (Alessandro Manzoni)",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 1367
+      },
+      "ok": true,
+      "working": true
+    },
+    "wikisource-ru": {
+      "name": "Wikisource (Русский)",
+      "version": 1,
+      "lists": [
+        {
+          "key": "romany",
+          "label": "Романы",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 142
+        },
+        {
+          "key": "rasskazy",
+          "label": "Рассказы",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 94
+        },
+        {
+          "key": "stihi",
+          "label": "Стихотворения",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 98
+        },
+        {
+          "key": "pesy",
+          "label": "Пьесы",
+          "ok": true,
+          "count": 24,
+          "covers": 0,
+          "ms": 166
+        }
+      ],
+      "search": {
+        "ok": true,
+        "count": 24,
+        "ms": 99
+      },
+      "book": {
+        "ok": true,
+        "title": "Братья Карамазовы (Достоевский)",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 2912
       },
       "ok": true,
       "working": true
@@ -131,7 +542,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 292
+          "ms": 297
         },
         {
           "key": "stories",
@@ -139,7 +550,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 79
+          "ms": 110
         },
         {
           "key": "poems",
@@ -147,7 +558,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 74
+          "ms": 105
         },
         {
           "key": "plays",
@@ -155,20 +566,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 78
+          "ms": 72
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 160
+        "ms": 261
       },
       "book": {
         "ok": true,
         "title": "Les Misérables",
         "format": "EPUB",
         "tried": 1,
-        "ms": 897
+        "ms": 734
       },
       "ok": true,
       "working": true
