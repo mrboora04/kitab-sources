@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wikisource-it",
+  "name": "Wikisource (Italiano)",
+  "version": 1,
+  "lang": "it",
+  "license": "Public domain and freely licensed texts",
+  "site": "https://it.wikisource.org",
+  "icon": "📜",
+  "hosts": [
+    "it.wikisource.org",
+    "ws-export.wmcloud.org"
+  ],
+  "type": "json",
+  "search": {
+    "url": "https://it.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch={q}",
+    "list": "query.search",
+    "pager": {
+      "total": "query.searchinfo.totalhits",
+      "per": 24
+    },
+    "map": {
+      "id": "pageid",
+      "title": "title",
+      "summary": "snippet",
+      "formats": [
+        {
+          "format": "EPUB",
+          "url": {
+            "tpl": "https://ws-export.wmcloud.org/?format=epub&lang=it&page={title|enc}"
+          }
+        }
+      ]
+    }
+  },
+  "browse": [
+    {
+      "key": "romanzi",
+      "label": "Romanzi",
+      "url": "https://it.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Romanzi%22"
+    },
+    {
+      "key": "racconti",
+      "label": "Racconti",
+      "url": "https://it.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Racconti%22"
+    },
+    {
+      "key": "poesie",
+      "label": "Poesie",
+      "url": "https://it.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Poesie%22"
+    },
+    {
+      "key": "teatro",
+      "label": "Teatro",
+      "url": "https://it.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Teatro%22"
+    }
+  ]
+}

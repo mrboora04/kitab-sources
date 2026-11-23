@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wikisource-de",
+  "name": "Wikisource (Deutsch)",
+  "version": 1,
+  "lang": "de",
+  "license": "Public domain and freely licensed texts",
+  "site": "https://de.wikisource.org",
+  "icon": "📜",
+  "hosts": [
+    "de.wikisource.org",
+    "ws-export.wmcloud.org"
+  ],
+  "type": "json",
+  "search": {
+    "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch={q}",
+    "list": "query.search",
+    "pager": {
+      "total": "query.searchinfo.totalhits",
+      "per": 24
+    },
+    "map": {
+      "id": "pageid",
+      "title": "title",
+      "summary": "snippet",
+      "formats": [
+        {
+          "format": "EPUB",
+          "url": {
+            "tpl": "https://ws-export.wmcloud.org/?format=epub&lang=de&page={title|enc}"
+          }
+        }
+      ]
+    }
+  },
+  "browse": [
+    {
+      "key": "romane",
+      "label": "Romane",
+      "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Roman%22"
+    },
+    {
+      "key": "maerchen",
+      "label": "Märchen",
+      "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22M%C3%A4rchen%22"
+    },
+    {
+      "key": "lyrik",
+      "label": "Lyrik",
+      "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Lyrik%22"
+    },
+    {
+      "key": "drama",
+      "label": "Drama",
+      "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Drama%22"
+    }
+  ]
+}

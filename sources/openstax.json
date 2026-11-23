@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "openstax",
+  "name": "OpenStax Textbooks",
+  "version": 1,
+  "lang": "multi",
+  "license": "Free, openly licensed college and school textbooks (CC BY)",
+  "site": "https://openstax.org",
+  "icon": "🎓",
+  "hosts": [
+    "openstax.org",
+    "assets.openstax.org"
+  ],
+  "type": "json",
+  "langFilter": {
+    "param": "&locale={v}",
+    "values": {
+      "en": "en",
+      "es": "es",
+      "pl": "pl"
+    }
+  },
+  "search": {
+    "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&fields=title,cover_url,high_resolution_pdf_url,authors,description&limit=24&offset={offset}&search={q}{lang}",
+    "list": "items",
+    "pager": {
+      "total": "meta.total_count",
+      "per": 24
+    },
+    "map": {
+      "id": "id",
+      "title": "title",
+      "authors": "authors[].name",
+      "summary": "description",
+      "cover": "cover_url",
+      "formats": [
+        {
+          "format": "PDF",
+          "url": "high_resolution_pdf_url"
+        }
+      ]
+    }
+  },
+  "browse": [
+    {
+      "key": "all",
+      "label": "All textbooks",
+      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description&limit=24&offset={offset}&order=title"
+    },
+    {
+      "key": "new",
+      "label": "Newest",
+      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description&limit=24&offset={offset}&order=-first_published_at"
+    },
+    {
+      "key": "es",
+      "label": "En español",
+      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description&limit=24&offset={offset}&order=title&locale=es"
+    }
+  ]
+}

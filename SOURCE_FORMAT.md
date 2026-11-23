@@ -84,6 +84,27 @@ Some sites only give the files on a second page:
 
 Each item of `list` whose `field` value is a key of `as` becomes a download of that kind (`EPUB` or `PDF`). In the template, `{identifier}` comes from the book and `{name}` from the file.
 
+#### Choosing a copy first (`detail.pick`, Kitab 1.19+)
+
+When a book has several copies and only some can be downloaded, `pick` asks one more question before `detail.url`,
+and puts the first answer back into the book under `as` (as a one-item list, so `{ia.0}` then means the chosen copy):
+
+```json
+"detail": {
+  "pick": {
+    "url": "https://archive.org/advancedsearch.php?q=identifier%3A({ia|or|enc})%20AND%20-access-restricted-item%3Atrue&fl%5B%5D=identifier&sort%5B%5D=downloads%20desc&rows=1&output=json",
+    "value": "response.docs.0.identifier",
+    "as": "ia",
+    "none": "No free copy of this book can be downloaded"
+  },
+  "url": "https://archive.org/metadata/{ia.0}",
+  ...
+}
+```
+
+Template filters go after the path: `|enc` makes a value safe for a web address, `|or` joins a list as `a OR b OR c`
+(at most 25), and they combine (`{ia|or|enc}`). Older Kitab versions skip `pick` and use the book's first copy.
+
 ## `html`: a plain web page
 
 Selectors are CSS. `selector@attribute` reads an attribute (`a.next@href`); without `@` it reads the text. The page is parsed but never run.

@@ -17,8 +17,10 @@ Then tap the arrow next to a source. It shows up under **Browse → Your sources
 | Source | What it reads | Books |
 |---|---|---|
 | Free Scanned Books | archive.org | Scanned books anyone can read free on the Internet Archive (no lending-library items), in any language |
-| Open Library (free scans) | openlibrary.org, archive.org | Free scans anyone can borrow or download, EPUB and PDF |
+| Open Library | openlibrary.org, archive.org | Public-domain books (first published by 1930) in any language; Kitab picks a copy that is free to download |
+| OpenStax Textbooks | openstax.org | Free, openly licensed college and school textbooks (PDF), in English, Spanish and Polish |
 | Wikisource | en.wikisource.org | Free texts (novels, short stories, poems, plays), exported as EPUB |
+| Wikisource in French, German, Spanish, Italian, Portuguese and Russian | xx.wikisource.org | The same, from each language's own Wikisource |
 
 Project Gutenberg (through Gutendex) is built into Kitab itself, so it is not repeated here.
 

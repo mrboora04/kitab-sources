@@ -1,3 +1,14 @@
 [
-  { "id": "free-books", "name": "Free Books Pack", "icon": "🎁", "about": "Free Scanned Books, Open Library and Wikisource in one tap.", "sources": ["internet-archive", "open-library", "wikisource"] }
+  {
+    "id": "free-books",
+    "name": "Free Books Pack",
+    "icon": "🎁",
+    "about": "Free Scanned Books, Open Library, Wikisource and OpenStax textbooks in one tap.",
+    "sources": [
+      "internet-archive",
+      "open-library",
+      "wikisource",
+      "openstax"
+    ]
+  }
 ]

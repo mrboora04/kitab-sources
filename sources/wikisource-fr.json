@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wikisource-fr",
+  "name": "Wikisource (Français)",
+  "version": 1,
+  "lang": "fr",
+  "license": "Public domain and freely licensed texts",
+  "site": "https://fr.wikisource.org",
+  "icon": "📜",
+  "hosts": [
+    "fr.wikisource.org",
+    "ws-export.wmcloud.org"
+  ],
+  "type": "json",
+  "search": {
+    "url": "https://fr.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch={q}",
+    "list": "query.search",
+    "pager": {
+      "total": "query.searchinfo.totalhits",
+      "per": 24
+    },
+    "map": {
+      "id": "pageid",
+      "title": "title",
+      "summary": "snippet",
+      "formats": [
+        {
+          "format": "EPUB",
+          "url": {
+            "tpl": "https://ws-export.wmcloud.org/?format=epub&lang=fr&page={title|enc}"
+          }
+        }
+      ]
+    }
+  },
+  "browse": [
+    {
+      "key": "romans",
+      "label": "Romans",
+      "url": "https://fr.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Romans%22"
+    },
+    {
+      "key": "contes",
+      "label": "Contes",
+      "url": "https://fr.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Contes%22"
+    },
+    {
+      "key": "poemes",
+      "label": "Poèmes",
+      "url": "https://fr.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Po%C3%A8mes%22"
+    },
+    {
+      "key": "theatre",
+      "label": "Théâtre",
+      "url": "https://fr.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Th%C3%A9%C3%A2tre%22"
+    }
+  ]
+}

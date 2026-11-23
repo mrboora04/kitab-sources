@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wikisource-es",
+  "name": "Wikisource (Español)",
+  "version": 1,
+  "lang": "es",
+  "license": "Public domain and freely licensed texts",
+  "site": "https://es.wikisource.org",
+  "icon": "📜",
+  "hosts": [
+    "es.wikisource.org",
+    "ws-export.wmcloud.org"
+  ],
+  "type": "json",
+  "search": {
+    "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch={q}",
+    "list": "query.search",
+    "pager": {
+      "total": "query.searchinfo.totalhits",
+      "per": 24
+    },
+    "map": {
+      "id": "pageid",
+      "title": "title",
+      "summary": "snippet",
+      "formats": [
+        {
+          "format": "EPUB",
+          "url": {
+            "tpl": "https://ws-export.wmcloud.org/?format=epub&lang=es&page={title|enc}"
+          }
+        }
+      ]
+    }
+  },
+  "browse": [
+    {
+      "key": "novelas",
+      "label": "Novelas",
+      "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Novelas%22"
+    },
+    {
+      "key": "cuentos",
+      "label": "Cuentos",
+      "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Cuentos%22"
+    },
+    {
+      "key": "poemas",
+      "label": "Poemas",
+      "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Poemas%22"
+    },
+    {
+      "key": "teatro",
+      "label": "Teatro",
+      "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Teatro%22"
+    }
+  ]
+}

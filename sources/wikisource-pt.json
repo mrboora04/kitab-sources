@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wikisource-pt",
+  "name": "Wikisource (Português)",
+  "version": 1,
+  "lang": "pt",
+  "license": "Public domain and freely licensed texts",
+  "site": "https://pt.wikisource.org",
+  "icon": "📜",
+  "hosts": [
+    "pt.wikisource.org",
+    "ws-export.wmcloud.org"
+  ],
+  "type": "json",
+  "search": {
+    "url": "https://pt.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch={q}",
+    "list": "query.search",
+    "pager": {
+      "total": "query.searchinfo.totalhits",
+      "per": 24
+    },
+    "map": {
+      "id": "pageid",
+      "title": "title",
+      "summary": "snippet",
+      "formats": [
+        {
+          "format": "EPUB",
+          "url": {
+            "tpl": "https://ws-export.wmcloud.org/?format=epub&lang=pt&page={title|enc}"
+          }
+        }
+      ]
+    }
+  },
+  "browse": [
+    {
+      "key": "romances",
+      "label": "Romances",
+      "url": "https://pt.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Romances%22"
+    },
+    {
+      "key": "contos",
+      "label": "Contos",
+      "url": "https://pt.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Contos%22"
+    },
+    {
+      "key": "poemas",
+      "label": "Poemas",
+      "url": "https://pt.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Poemas%22"
+    },
+    {
+      "key": "teatro",
+      "label": "Teatro",
+      "url": "https://pt.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Teatro%22"
+    }
+  ]
+}

@@ -15,14 +15,91 @@
     },
     {
       "id": "open-library",
-      "name": "Open Library (free scans)",
+      "name": "Open Library",
       "lang": "multi",
-      "version": 1,
+      "version": 2,
       "file": "sources/open-library.json",
-      "sha256": "3040c78c64146959009881062d9ab52138716e71c6900c3722138181ad3a5df9",
+      "sha256": "6a1ca30f144f28d58c0b95c9f4c3b5bfa6e3f729b1fb16b627a8e5d91f0509a6",
       "site": "https://openlibrary.org",
       "icon": "📖",
-      "license": "Public-domain and open scans"
+      "license": "Public domain: books first published in 1930 or earlier, scanned by the Internet Archive"
+    },
+    {
+      "id": "openstax",
+      "name": "OpenStax Textbooks",
+      "lang": "multi",
+      "version": 1,
+      "file": "sources/openstax.json",
+      "sha256": "c35c9518b0c58308043fedbbc2c07f3f9abc20cd9743d5c8db8060342272ed02",
+      "site": "https://openstax.org",
+      "icon": "🎓",
+      "license": "Free, openly licensed college and school textbooks (CC BY)"
+    },
+    {
+      "id": "wikisource-de",
+      "name": "Wikisource (Deutsch)",
+      "lang": "de",
+      "version": 1,
+      "file": "sources/wikisource-de.json",
+      "sha256": "3e8bc9fa84afde6cc4c2f033caf8cd974c66bd1f968734712d80db6b5ca949ef",
+      "site": "https://de.wikisource.org",
+      "icon": "📜",
+      "license": "Public domain and freely licensed texts"
+    },
+    {
+      "id": "wikisource-es",
+      "name": "Wikisource (Español)",
+      "lang": "es",
+      "version": 1,
+      "file": "sources/wikisource-es.json",
+      "sha256": "b09cc546b43f66b30765d4bbce8fbbcc032c9d234f9affabd8e35cc5d1b3b49e",
+      "site": "https://es.wikisource.org",
+      "icon": "📜",
+      "license": "Public domain and freely licensed texts"
+    },
+    {
+      "id": "wikisource-fr",
+      "name": "Wikisource (Français)",
+      "lang": "fr",
+      "version": 1,
+      "file": "sources/wikisource-fr.json",
+      "sha256": "14463ed8550b54cf00a2246b1e1ace8305c7bbe0736774321629f5633b37e094",
+      "site": "https://fr.wikisource.org",
+      "icon": "📜",
+      "license": "Public domain and freely licensed texts"
+    },
+    {
+      "id": "wikisource-it",
+      "name": "Wikisource (Italiano)",
+      "lang": "it",
+      "version": 1,
+      "file": "sources/wikisource-it.json",
+      "sha256": "c3bc812e9da0cf99f92664a4fb8b6100594aeab4e54d4ddaeb81beb49f52d128",
+      "site": "https://it.wikisource.org",
+      "icon": "📜",
+      "license": "Public domain and freely licensed texts"
+    },
+    {
+      "id": "wikisource-pt",
+      "name": "Wikisource (Português)",
+      "lang": "pt",
+      "version": 1,
+      "file": "sources/wikisource-pt.json",
+      "sha256": "45e6b8e2cd96347787ad90e3e8b363ecde9cace53f0ed6d72359d2ac7f0b432f",
+      "site": "https://pt.wikisource.org",
+      "icon": "📜",
+      "license": "Public domain and freely licensed texts"
+    },
+    {
+      "id": "wikisource-ru",
+      "name": "Wikisource (Русский)",
+      "lang": "ru",
+      "version": 1,
+      "file": "sources/wikisource-ru.json",
+      "sha256": "89f00e8411b51786829f641aff13f70b3ee226ccecc9f4316f15f7963d55dfe7",
+      "site": "https://ru.wikisource.org",
+      "icon": "📜",
+      "license": "Public domain and freely licensed texts"
     },
     {
       "id": "wikisource",
@@ -41,11 +118,12 @@
       "id": "free-books",
       "name": "Free Books Pack",
       "icon": "🎁",
-      "about": "Free Scanned Books, Open Library and Wikisource in one tap.",
+      "about": "Free Scanned Books, Open Library, Wikisource and OpenStax textbooks in one tap.",
       "sources": [
         "internet-archive",
         "open-library",
-        "wikisource"
+        "wikisource",
+        "openstax"
       ]
     }
   ],
