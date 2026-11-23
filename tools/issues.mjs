@@ -12,7 +12,7 @@ try { gh('label', 'create', 'daily-check', '--color', 'd93f0b', '--description',
 for (const [id, r] of Object.entries(status.sources)) {
   const title = `Source not working: ${r.name} (${id})`;
   const issue = open.find((i) => i.title === title);
-  const broken = !r.skipped && !r.working;
+  const broken = !r.skipped && r.working === false;
   const problems = [...r.lists.map((l) => ({ ...l, what: `List "${l.label}"` })), r.search && { ...r.search, what: 'Search' }, r.book && { ...r.book, what: 'Book download' }]
     .filter((x) => x && !x.ok).map((x) => `- **${x.what}**: ${x.error}`).join('\n');
   if (broken && !issue) {

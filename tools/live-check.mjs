@@ -137,9 +137,14 @@ for (const { def, builtin } of defs) {
   r.ok = !r.skipped && parts.length > 0 && parts.every((x) => x.ok);
   // a source is "working" when you can open a list or search, and download a book
   r.working = !!r.skipped || ((r.lists.some((x) => x.ok) || r.search?.ok) && !!r.book?.ok);
+  // Some sites (behind Cloudflare) refuse GitHub's servers but not phones: that says nothing about the source
+  if (!r.working && parts.length && parts.every((x) => !x.ok && /answered 403/.test(x.error))) {
+    r.working = null;
+    r.blocked = 'The site refuses requests from GitHub\'s servers, so it cannot be checked from here (phones are not affected)';
+  }
   if (builtin) r.builtin = true;
   status.sources[def.id] = r;
-  console.log(r.ok ? 'ok' : r.working ? 'partly working' : 'NOT WORKING');
+  console.log(r.ok ? 'ok' : r.blocked ? 'could not be checked (the site blocks GitHub)' : r.working ? 'partly working' : 'NOT WORKING');
   for (const p of parts) if (!p.ok) console.log(`   ✗ ${p.label || (p === r.search ? 'search' : 'download')}: ${p.error}`);
 }
 writeFileSync('status.json', JSON.stringify(status, null, 2) + '\n');
@@ -149,7 +154,7 @@ const lines = ['| Source | State | Lists | Search | Book download |', '|---|---|
 for (const [id, r] of Object.entries(status.sources)) {
   const lists = r.lists.length ? `${r.lists.filter((x) => x.ok).length}/${r.lists.length}` : '–';
   const cell = (x) => (!x ? '–' : x.ok ? '✓' : '✗ ' + x.error.replace(/\|/g, '/'));
-  lines.push(`| ${r.name} (\`${id}\`) | ${r.skipped ? 'skipped' : r.ok ? '✅ working' : r.working ? '⚠️ partly' : '❌ not working'} | ${lists} | ${cell(r.search)} | ${cell(r.book)} |`);
+  lines.push(`| ${r.name} (\`${id}\`) | ${r.skipped ? 'skipped' : r.ok ? '✅ working' : r.blocked ? '❔ blocks GitHub' : r.working ? '⚠️ partly' : '❌ not working'} | ${lists} | ${cell(r.search)} | ${cell(r.book)} |`);
 }
 writeFileSync('status.md', lines.join('\n') + '\n');
 console.log('\n' + lines.join('\n'));
