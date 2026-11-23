@@ -2,7 +2,7 @@
 |---|---|---|---|---|
 | Project Gutenberg (`gutenberg`) | ❔ blocks GitHub | 0/7 | ✗ The site answered 403 | – |
 | Free Scanned Books (`internet-archive`) | ✅ working | 2/2 | ✓ | ✓ |
-| Open Library (`open-library`) | ✅ working | 7/7 | ✓ | ✓ |
+| Open Library (`open-library`) | ❌ not working | 7/7 | ✓ | ✗ "Pride and Prejudice": fetch failed; "The Art of War": fetch failed; "Metamorphosis": No free copy of this book can be downloaded |
 | OpenStax Textbooks (`openstax`) | ✅ working | 3/3 | ✓ | ✓ |
 | Wikisource (Deutsch) (`wikisource-de`) | ✅ working | 4/4 | ✓ | ✓ |
 | Wikisource (Español) (`wikisource-es`) | ✅ working | 4/4 | ✓ | ✓ |
