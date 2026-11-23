@@ -115,8 +115,15 @@ async function checkSource(def) {
       const why = [];
       for (const sample of samples) {
         try {
-          let formats = sample.formats || [];
-          if (!formats.length && sample.detail) formats = ((await Sources.load(sample.detail)).entries[0] || {}).formats || [];
+          let formats = sample.formats || [], read = sample.read || '';
+          if ((!formats.length || !read) && sample.detail) { const d = (await Sources.load(sample.detail)).entries[0] || {}; if (!formats.length) formats = d.formats || []; read = read || d.read || ''; }
+          // "Read now": the book's page list must open and have pages
+          if (read && !out.pages) out.pages = await timed(async () => {
+            const m = JSON.parse((await fetchText(read)).body);
+            const n = (m.items || (m.sequences && m.sequences[0] && m.sequences[0].canvases) || []).length;
+            if (!n) throw new Error('the page list has no pages');
+            return { count: n, title: sample.title };
+          });
           if (!formats.length) throw new Error('no EPUB or PDF to download');
           return { title: sample.title, format: await probeDownload(formats[0].url), tried: why.length + 1 };
         } catch (e) { why.push(`"${sample.title}": ${e.message}`); }
@@ -133,7 +140,7 @@ for (const { def, builtin } of defs) {
   if (only && def.id !== only) continue;
   process.stdout.write(`${def.id} … `);
   const r = await checkSource(def);
-  const parts = [...r.lists, r.search, r.book].filter(Boolean);
+  const parts = [...r.lists, r.search, r.book, r.pages].filter(Boolean);
   r.ok = !r.skipped && parts.length > 0 && parts.every((x) => x.ok);
   // a source is "working" when you can open a list or search, and download a book
   r.working = !!r.skipped || ((r.lists.some((x) => x.ok) || r.search?.ok) && !!r.book?.ok);
@@ -150,11 +157,11 @@ for (const { def, builtin } of defs) {
 writeFileSync('status.json', JSON.stringify(status, null, 2) + '\n');
 
 // a short report for the GitHub run page and for the issue
-const lines = ['| Source | State | Lists | Search | Book download |', '|---|---|---|---|---|'];
+const lines = ['| Source | State | Lists | Search | Book download | Read now |', '|---|---|---|---|---|---|'];
 for (const [id, r] of Object.entries(status.sources)) {
   const lists = r.lists.length ? `${r.lists.filter((x) => x.ok).length}/${r.lists.length}` : '–';
   const cell = (x) => (!x ? '–' : x.ok ? '✓' : '✗ ' + x.error.replace(/\|/g, '/'));
-  lines.push(`| ${r.name} (\`${id}\`) | ${r.skipped ? 'skipped' : r.ok ? '✅ working' : r.blocked ? '❔ blocks GitHub' : r.working ? '⚠️ partly' : '❌ not working'} | ${lists} | ${cell(r.search)} | ${cell(r.book)} |`);
+  lines.push(`| ${r.name} (\`${id}\`) | ${r.skipped ? 'skipped' : r.ok ? '✅ working' : r.blocked ? '❔ blocks GitHub' : r.working ? '⚠️ partly' : '❌ not working'} | ${lists} | ${cell(r.search)} | ${cell(r.book)} | ${r.pages ? (r.pages.ok ? `✓ ${r.pages.count} pages` : cell(r.pages)) : '–'} |`);
 }
 writeFileSync('status.md', lines.join('\n') + '\n');
 console.log('\n' + lines.join('\n'));
