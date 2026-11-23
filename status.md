@@ -4,8 +4,8 @@
 | Free Scanned Books (`internet-archive`) | ✅ working | 2/2 | ✓ | ✓ |
 | Open Library (`open-library`) | ✅ working | 7/7 | ✓ | ✓ |
 | OpenStax Textbooks (`openstax`) | ✅ working | 3/3 | ✓ | ✓ |
-| Wikisource (Deutsch) (`wikisource-de`) | ⚠️ partly | 3/4 | ✓ | ✓ |
-| Wikisource (Español) (`wikisource-es`) | ⚠️ partly | 3/4 | ✓ | ✓ |
+| Wikisource (Deutsch) (`wikisource-de`) | ✅ working | 4/4 | ✓ | ✓ |
+| Wikisource (Español) (`wikisource-es`) | ✅ working | 4/4 | ✓ | ✓ |
 | Wikisource (Français) (`wikisource-fr`) | ✅ working | 4/4 | ✓ | ✓ |
 | Wikisource (Italiano) (`wikisource-it`) | ✅ working | 4/4 | ✓ | ✓ |
 | Wikisource (Português) (`wikisource-pt`) | ✅ working | 4/4 | ✓ | ✓ |
