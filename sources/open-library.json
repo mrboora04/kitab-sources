@@ -2,14 +2,15 @@
   "schema": 1,
   "id": "open-library",
   "name": "Open Library",
-  "version": 2,
+  "version": 3,
   "lang": "multi",
   "license": "Public domain: books first published in 1930 or earlier, scanned by the Internet Archive",
   "site": "https://openlibrary.org",
   "icon": "📖",
   "hosts": [
     "openlibrary.org",
-    "archive.org"
+    "archive.org",
+    "iiif.archive.org"
   ],
   "coverHosts": [
     "covers.openlibrary.org"
@@ -112,6 +113,9 @@
       "url": {
         "tpl": "https://archive.org/download/{ia.0}/{name|enc}"
       }
+    },
+    "read": {
+      "tpl": "https://iiif.archive.org/iiif/3/{ia.0}/manifest.json"
     }
   }
 }

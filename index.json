@@ -6,9 +6,9 @@
       "id": "internet-archive",
       "name": "Free Scanned Books",
       "lang": "multi",
-      "version": 4,
+      "version": 5,
       "file": "sources/internet-archive.json",
-      "sha256": "b44339d23e4fcab03151f4e42349090134fbad5ecfaf5526517cb50d9cf2251c",
+      "sha256": "666ce93bb8d13e5d7a24dbf28c07e02e657c4f60aa4ff85805f73235ba772ede",
       "site": "https://archive.org/details/texts",
       "icon": "🏛️",
       "license": "Free to read scans (Internet Archive)"
@@ -17,9 +17,9 @@
       "id": "open-library",
       "name": "Open Library",
       "lang": "multi",
-      "version": 2,
+      "version": 3,
       "file": "sources/open-library.json",
-      "sha256": "6a1ca30f144f28d58c0b95c9f4c3b5bfa6e3f729b1fb16b627a8e5d91f0509a6",
+      "sha256": "adab6b7255b5fc5cff2b757716fc2340f17910a3d0cc1e6fb6df0463d11d9314",
       "site": "https://openlibrary.org",
       "icon": "📖",
       "license": "Public domain: books first published in 1930 or earlier, scanned by the Internet Archive"
