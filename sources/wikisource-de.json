@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "wikisource-de",
   "name": "Wikisource (Deutsch)",
-  "version": 1,
+  "version": 2,
   "lang": "de",
   "license": "Public domain and freely licensed texts",
   "site": "https://de.wikisource.org",
@@ -47,7 +47,7 @@
     {
       "key": "lyrik",
       "label": "Lyrik",
-      "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Lyrik%22"
+      "url": "https://de.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3AGedicht%7CGedichte%7CLyrik%7CBallade"
     },
     {
       "key": "drama",

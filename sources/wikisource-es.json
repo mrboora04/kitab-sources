@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "wikisource-es",
   "name": "Wikisource (Español)",
-  "version": 1,
+  "version": 2,
   "lang": "es",
   "license": "Public domain and freely licensed texts",
   "site": "https://es.wikisource.org",
@@ -47,7 +47,7 @@
     {
       "key": "poemas",
       "label": "Poemas",
-      "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3A%22Poemas%22"
+      "url": "https://es.wikisource.org/w/api.php?action=query&list=search&srnamespace=0&srlimit=24&sroffset={offset}&srprop=snippet&format=json&formatversion=2&srsearch=incategory%3APoemas%7CPoes%C3%ADas%7CPoes%C3%ADa%7CPoemas%20de%20Espa%C3%B1a"
     },
     {
       "key": "teatro",

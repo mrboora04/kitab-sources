@@ -39,9 +39,9 @@
       "id": "wikisource-de",
       "name": "Wikisource (Deutsch)",
       "lang": "de",
-      "version": 1,
+      "version": 2,
       "file": "sources/wikisource-de.json",
-      "sha256": "3e8bc9fa84afde6cc4c2f033caf8cd974c66bd1f968734712d80db6b5ca949ef",
+      "sha256": "4bbada57d4617d9dd849c552e69bda2a396b712ab1d44cfc53ba0eb3880d942b",
       "site": "https://de.wikisource.org",
       "icon": "📜",
       "license": "Public domain and freely licensed texts"
@@ -50,9 +50,9 @@
       "id": "wikisource-es",
       "name": "Wikisource (Español)",
       "lang": "es",
-      "version": 1,
+      "version": 2,
       "file": "sources/wikisource-es.json",
-      "sha256": "b09cc546b43f66b30765d4bbce8fbbcc032c9d234f9affabd8e35cc5d1b3b49e",
+      "sha256": "8c1ad131a0db5dc213f608f03588310886798cadf94d5274c5f20089e28f0194",
       "site": "https://es.wikisource.org",
       "icon": "📜",
       "license": "Public domain and freely licensed texts"
