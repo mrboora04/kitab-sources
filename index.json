@@ -28,9 +28,9 @@
       "id": "open-library",
       "name": "Open Library",
       "lang": "multi",
-      "version": 3,
+      "version": 4,
       "file": "sources/open-library.json",
-      "sha256": "adab6b7255b5fc5cff2b757716fc2340f17910a3d0cc1e6fb6df0463d11d9314",
+      "sha256": "5ccf339456d02e87052cb72a14a90eea6a2e6d63b2e49eb9d4d0e498a26daf31",
       "site": "https://openlibrary.org",
       "icon": "📖",
       "license": "Public domain: books first published in 1930 or earlier, scanned by the Internet Archive"
