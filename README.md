@@ -21,8 +21,17 @@ Then tap the arrow next to a source. It shows up under **Browse → Your sources
 | OpenStax Textbooks | openstax.org | Free, openly licensed college and school textbooks (PDF), in English, Spanish and Polish |
 | Wikisource | en.wikisource.org | Free texts (novels, short stories, poems, plays), exported as EPUB |
 | Wikisource in French, German, Spanish, Italian, Portuguese and Russian | xx.wikisource.org | The same, from each language's own Wikisource |
+| African Storybook | africanstorybook.org | 3,000+ openly licensed picture storybooks for children in 150+ languages, by language and reading level (EPUB). Needs Kitab 1.22 |
 
 Project Gutenberg (through Gutendex) is built into Kitab itself, so it is not repeated here.
+
+## Catalogs: whole libraries, sorted
+
+Some libraries have no search a reader app can use, only one long list on their website. For those, a script in
+[`tools/catalogs/`](tools/catalogs) reads the list every day, tidies it (fixes garbled titles, names the languages,
+labels reading levels) and writes it to [`catalogs/`](catalogs). A source of type `catalog` points Kitab at that file;
+Kitab searches it and builds its shelves on the phone, and every book still downloads straight from the library.
+This repository hosts lists of books, never the books themselves.
 
 ## Checked every day
 

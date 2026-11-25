@@ -30,6 +30,11 @@ jobs:
       - name: Install
         run: npm ci --no-audit --no-fund
 
+      - name: Build the catalogs (whole lists of books from libraries without a search API)
+        continue-on-error: true          # if a site changed, yesterday's catalog stays and the check below reports it
+        run: |
+          for f in tools/catalogs/*.mjs; do node "$f" || echo "::warning::$f failed"; done
+
       - name: Check
         run: |
           node tools/live-check.mjs
@@ -40,11 +45,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           # another run may have saved its results meanwhile: always write ours onto the newest main
-          mkdir -p "$RUNNER_TEMP/out" && cp status.json status.md "$RUNNER_TEMP/out/"
+          mkdir -p "$RUNNER_TEMP/out" && cp -r status.json status.md catalogs "$RUNNER_TEMP/out/"
           for try in 1 2 3; do
             git fetch -q origin main && git checkout -q -B main origin/main
-            cp "$RUNNER_TEMP/out/status.json" "$RUNNER_TEMP/out/status.md" .
-            git add status.json status.md
+            cp -r "$RUNNER_TEMP/out/status.json" "$RUNNER_TEMP/out/status.md" "$RUNNER_TEMP/out/catalogs" .
+            git add status.json status.md catalogs
             if git diff --cached --quiet; then exit 0; fi
             git commit -q -m "Daily check $(date -u +%F) [skip ci]"
             git push -q origin main && exit 0

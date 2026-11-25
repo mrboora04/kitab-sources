@@ -3,6 +3,17 @@
   "name": "Kitab Official Sources",
   "sources": [
     {
+      "id": "african-storybook",
+      "name": "African Storybook",
+      "lang": "multi",
+      "version": 1,
+      "file": "sources/african-storybook.json",
+      "sha256": "2451ae85c2cec97de20787fdb124140d8e372a9ac51bc7d0d728e497a946241b",
+      "site": "https://www.africanstorybook.org",
+      "icon": "🦓",
+      "license": "Openly licensed picture storybooks for children (CC BY 4.0)"
+    },
+    {
       "id": "internet-archive",
       "name": "Free Scanned Books",
       "lang": "multi",

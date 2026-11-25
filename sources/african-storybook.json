@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "african-storybook",
+  "name": "African Storybook",
+  "version": 1,
+  "lang": "multi",
+  "license": "Openly licensed picture storybooks for children (CC BY 4.0)",
+  "site": "https://www.africanstorybook.org",
+  "icon": "🦓",
+  "blurb": "Picture storybooks for children in 150+ languages",
+  "hosts": [
+    "raw.githubusercontent.com",
+    "www.africanstorybook.org"
+  ],
+  "type": "catalog",
+  "catalog": "https://raw.githubusercontent.com/mrboora04/kitab-sources/main/catalogs/african-storybook.json",
+  "langFilter": {
+    "values": {
+      "en": "en",
+      "fr": "fr",
+      "es": "es",
+      "pt": "pt",
+      "ar": "ar"
+    }
+  },
+  "browse": [
+    {
+      "key": "new",
+      "label": "Newest",
+      "sort": "added"
+    },
+    {
+      "key": "en",
+      "label": "English",
+      "where": {
+        "language": "English"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "fr",
+      "label": "French",
+      "where": {
+        "language": "French"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "es",
+      "label": "Spanish",
+      "where": {
+        "language": "Spanish"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "pt",
+      "label": "Portuguese",
+      "where": {
+        "language": "Portuguese"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "ar",
+      "label": "Arabic",
+      "where": {
+        "language": "Arabic"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "zu",
+      "label": "isiZulu",
+      "where": {
+        "language": "isiZulu"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "af",
+      "label": "Afrikaans",
+      "where": {
+        "language": "Afrikaans"
+      },
+      "sort": "added"
+    },
+    {
+      "key": "l1",
+      "label": "First words",
+      "about": "Level 1: a few words a page",
+      "where": {
+        "level": 1
+      },
+      "sort": "added"
+    },
+    {
+      "key": "l2",
+      "label": "First sentences",
+      "about": "Level 2",
+      "where": {
+        "level": 2
+      },
+      "sort": "added"
+    },
+    {
+      "key": "l3",
+      "label": "First paragraphs",
+      "about": "Level 3",
+      "where": {
+        "level": 3
+      },
+      "sort": "added"
+    },
+    {
+      "key": "l4",
+      "label": "Longer stories",
+      "about": "Level 4",
+      "where": {
+        "level": 4
+      },
+      "sort": "added"
+    },
+    {
+      "key": "l5",
+      "label": "Read aloud",
+      "about": "Level 5: for reading to children",
+      "where": {
+        "level": 5
+      },
+      "sort": "added"
+    }
+  ]
+}

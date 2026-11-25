@@ -19,7 +19,8 @@ function validate(d) {
   if (!str(d.license, 200)) return 'license is missing: say what kind of books the source offers';
   if (d.adult) return 'sources with adult content are not allowed';
   if (!Array.isArray(d.hosts) || !d.hosts.length || d.hosts.length > 6 || d.hosts.some((h) => !/^(\*\.)?[a-z0-9-]+(\.[a-z0-9-]+)*\.[a-z]{2,}$/.test(h))) return 'hosts must list 1-6 website names';
-  if (!['json', 'html', 'opds'].includes(d.type)) return 'type must be json, html or opds';
+  if (!['json', 'html', 'opds', 'catalog'].includes(d.type)) return 'type must be json, html, opds or catalog';
+  if (d.type === 'catalog' && !/^https:\/\/\S+$/.test(d.catalog || '')) return 'a catalog source needs its catalog address';
   if (JSON.stringify(d).length > 20000) return 'the file is too large';
   const hostOk = (url) => {
     let u; try { u = new URL(url); } catch { return false; }
