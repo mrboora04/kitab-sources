@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "shelves": [
+    {
+      "id": "lang",
+      "title": "In {language}",
+      "byLang": {
+        "en": {
+          "source": "gutenberg",
+          "list": "popular",
+          "title": "Popular in English"
+        },
+        "es": {
+          "source": "wikisource-es",
+          "list": "novelas"
+        },
+        "fr": {
+          "source": "wikisource-fr",
+          "list": "romans"
+        },
+        "de": {
+          "source": "wikisource-de",
+          "list": "romane"
+        },
+        "it": {
+          "source": "wikisource-it",
+          "list": "romanzi"
+        },
+        "pt": {
+          "source": "wikisource-pt",
+          "list": "romances"
+        },
+        "ru": {
+          "source": "wikisource-ru",
+          "list": "romany"
+        },
+        "ar": {
+          "source": "african-storybook",
+          "list": "ar"
+        }
+      }
+    },
+    {
+      "id": "classics",
+      "title": "Popular classics",
+      "source": "gutenberg",
+      "list": "popular"
+    },
+    {
+      "id": "scans",
+      "title": "From the world's libraries",
+      "about": "Scanned by public and university libraries",
+      "source": "internet-archive",
+      "list": "popular"
+    },
+    {
+      "id": "fiction",
+      "title": "Novels and stories",
+      "source": "open-library",
+      "list": "fiction"
+    },
+    {
+      "id": "textbooks",
+      "title": "Free textbooks",
+      "source": "openstax",
+      "list": "all"
+    },
+    {
+      "id": "children",
+      "title": "For children",
+      "source": "gutenberg",
+      "list": "children"
+    },
+    {
+      "id": "picture",
+      "title": "Picture storybooks",
+      "source": "african-storybook",
+      "list": "new"
+    },
+    {
+      "id": "poetry",
+      "title": "Poetry",
+      "source": "open-library",
+      "list": "poetry"
+    },
+    {
+      "id": "history",
+      "title": "History",
+      "source": "gutenberg",
+      "list": "history"
+    },
+    {
+      "id": "science",
+      "title": "Science",
+      "source": "open-library",
+      "list": "science"
+    },
+    {
+      "id": "philosophy",
+      "title": "Philosophy",
+      "source": "open-library",
+      "list": "philosophy"
+    },
+    {
+      "id": "ws-novels",
+      "title": "Novels on Wikisource",
+      "source": "wikisource",
+      "list": "novels"
+    }
+  ]
+}
