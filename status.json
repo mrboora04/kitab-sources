@@ -1,64 +1,64 @@
 {
-  "checkedAt": "2026-11-25T22:58:03.979Z",
+  "checkedAt": "2026-11-26T03:48:12.392Z",
   "sources": {
     "gutenberg": {
       "name": "Project Gutenberg",
-      "version": 2,
+      "version": 3,
       "lists": [
         {
           "key": "popular",
           "label": "Popular",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 84
+          "ms": 70
         },
         {
           "key": "latest",
           "label": "Latest",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 33
+          "ms": 43
         },
         {
           "key": "fiction",
           "label": "Fiction",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 29
+          "ms": 51
         },
         {
           "key": "children",
           "label": "Children",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 29
+          "ms": 38
         },
         {
           "key": "poetry",
           "label": "Poetry",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 30
+          "ms": 41
         },
         {
           "key": "history",
           "label": "History",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 33
+          "ms": 42
         },
         {
           "key": "science",
           "label": "Science",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 34
+          "ms": 43
         }
       ],
       "search": {
         "ok": false,
         "error": "The site answered 403",
-        "ms": 32
+        "ms": 48
       },
       "book": null,
       "ok": false,
@@ -76,7 +76,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 273
+          "ms": 194
         },
         {
           "key": "en",
@@ -84,7 +84,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 1
+          "ms": 2
         },
         {
           "key": "fr",
@@ -92,7 +92,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 1
+          "ms": 2
         },
         {
           "key": "es",
@@ -100,7 +100,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 1
+          "ms": 2
         },
         {
           "key": "pt",
@@ -108,7 +108,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 1
+          "ms": 2
         },
         {
           "key": "ar",
@@ -148,7 +148,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 1
+          "ms": 2
         },
         {
           "key": "l3",
@@ -156,7 +156,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 2
+          "ms": 1
         },
         {
           "key": "l4",
@@ -179,14 +179,14 @@
       "book": {
         "ok": false,
         "error": "\"No One Has All the Wisdom\": the book file is not an EPUB or PDF (application/epub+zip); \"Kò Sí Ẹni Tó Ní Gbogbo Ọgbọ́n\": the book file is not an EPUB or PDF (application/epub+zip); \"Reitumetse o ruta 'm'e oa hae ka AI\": the book file is not an EPUB or PDF (application/epub+zip)",
-        "ms": 2196
+        "ms": 2304
       },
       "ok": false,
       "working": false
     },
     "internet-archive": {
       "name": "Free Scanned Books",
-      "version": 6,
+      "version": 7,
       "lists": [
         {
           "key": "popular",
@@ -194,7 +194,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 168
+          "ms": 345
         },
         {
           "key": "classics",
@@ -202,33 +202,33 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 99
+          "ms": 148
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 536
+        "ms": 729
       },
       "book": {
         "ok": true,
-        "title": "Goody Two-Shoes",
+        "title": "The Kama sutra of Vatsyayana",
         "format": "EPUB",
-        "tried": 1,
-        "ms": 2046
+        "tried": 2,
+        "ms": 18820
       },
       "pages": {
         "ok": true,
         "count": 16,
         "title": "Goody Two-Shoes",
-        "ms": 1084
+        "ms": 1241
       },
       "ok": true,
       "working": true
     },
     "open-library": {
       "name": "Open Library",
-      "version": 4,
+      "version": 5,
       "lists": [
         {
           "key": "popular",
@@ -236,7 +236,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 578
+          "ms": 1468
         },
         {
           "key": "fiction",
@@ -244,7 +244,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 333
+          "ms": 542
         },
         {
           "key": "children",
@@ -252,7 +252,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 213
+          "ms": 858
         },
         {
           "key": "poetry",
@@ -260,7 +260,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 146
+          "ms": 291
         },
         {
           "key": "history",
@@ -268,7 +268,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 818
+          "ms": 543
         },
         {
           "key": "science",
@@ -276,7 +276,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 356
+          "ms": 263
         },
         {
           "key": "philosophy",
@@ -284,33 +284,32 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 295
+          "ms": 360
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 2417
+        "ms": 1838
       },
       "book": {
         "ok": true,
         "title": "Pride and Prejudice",
         "format": "EPUB",
         "tried": 1,
-        "ms": 7381
+        "ms": 5442
       },
       "pages": {
-        "ok": true,
-        "count": 572,
-        "title": "Pride and Prejudice",
-        "ms": 231
+        "ok": false,
+        "error": "The site answered 500",
+        "ms": 601
       },
-      "ok": true,
+      "ok": false,
       "working": true
     },
     "openstax": {
       "name": "OpenStax Textbooks",
-      "version": 1,
+      "version": 2,
       "lists": [
         {
           "key": "all",
@@ -318,7 +317,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 308
+          "ms": 758
         },
         {
           "key": "new",
@@ -326,7 +325,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 184
+          "ms": 512
         },
         {
           "key": "es",
@@ -334,20 +333,20 @@
           "ok": true,
           "count": 11,
           "covers": 11,
-          "ms": 157
+          "ms": 377
         }
       ],
       "search": {
         "ok": true,
         "count": 3,
-        "ms": 116
+        "ms": 157
       },
       "book": {
         "ok": true,
         "title": "Additive Manufacturing Essentials",
         "format": "PDF",
         "tried": 1,
-        "ms": 56
+        "ms": 73
       },
       "ok": true,
       "working": true
@@ -359,10 +358,9 @@
         {
           "key": "romane",
           "label": "Romane",
-          "ok": true,
-          "count": 24,
-          "covers": 0,
-          "ms": 226
+          "ok": false,
+          "error": "the list came back empty",
+          "ms": 282
         },
         {
           "key": "maerchen",
@@ -370,7 +368,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 127
+          "ms": 73
         },
         {
           "key": "lyrik",
@@ -378,7 +376,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 153
+          "ms": 109
         },
         {
           "key": "drama",
@@ -386,21 +384,23 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 150
+          "ms": 391
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 146
+        "ms": 158
       },
       "book": {
-        "ok": false,
-        "error": "\"Das Schloß\": the book file answered 403; \"Die Waffen nieder!\": the book file answered 403; \"Der Stechlin\": the book file answered 403",
-        "ms": 644
+        "ok": true,
+        "title": "Chinesische Volksmärchen",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 574
       },
       "ok": false,
-      "working": false
+      "working": true
     },
     "wikisource-es": {
       "name": "Wikisource (Español)",
@@ -412,7 +412,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 234
+          "ms": 285
         },
         {
           "key": "cuentos",
@@ -420,7 +420,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 136
+          "ms": 86
         },
         {
           "key": "poemas",
@@ -428,7 +428,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 156
+          "ms": 149
         },
         {
           "key": "teatro",
@@ -436,7 +436,7 @@
           "ok": true,
           "count": 6,
           "covers": 0,
-          "ms": 132
+          "ms": 69
         }
       ],
       "search": {
@@ -445,12 +445,14 @@
         "ms": 152
       },
       "book": {
-        "ok": false,
-        "error": "\"Atalaya de la vida humana\": the book file answered 403; \"Ana Karenina\": the book file answered 403; \"Robinson Crusoe\": the book file answered 403",
-        "ms": 230
+        "ok": true,
+        "title": "Atalaya de la vida humana",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 586
       },
-      "ok": false,
-      "working": false
+      "ok": true,
+      "working": true
     },
     "wikisource-fr": {
       "name": "Wikisource (Français)",
@@ -470,7 +472,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 187
+          "ms": 61
         },
         {
           "key": "poemes",
@@ -478,7 +480,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 148
+          "ms": 118
         },
         {
           "key": "theatre",
@@ -486,21 +488,23 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 176
+          "ms": 86
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 171
+        "ms": 116
       },
       "book": {
-        "ok": false,
-        "error": "\"Vie et opinions de Tristram Shandy\": the book file answered 403; \"Le Vicomte de Bragelonne\": the book file answered 403; \"Œuvres complètes de Voltaire/Tome 21\": the book file answered 403",
-        "ms": 229
+        "ok": true,
+        "title": "Vie et opinions de Tristram Shandy",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 3559
       },
-      "ok": false,
-      "working": false
+      "ok": true,
+      "working": true
     },
     "wikisource-it": {
       "name": "Wikisource (Italiano)",
@@ -512,7 +516,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 173
+          "ms": 454
         },
         {
           "key": "racconti",
@@ -520,7 +524,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 127
+          "ms": 75
         },
         {
           "key": "poesie",
@@ -528,7 +532,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 161
+          "ms": 100
         },
         {
           "key": "teatro",
@@ -536,21 +540,23 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 125
+          "ms": 73
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 132
+        "ms": 86
       },
       "book": {
-        "ok": false,
-        "error": "\"Filocolo\": the book file answered 403; \"Don Chisciotte della Mancia\": the book file answered 403; \"Avventure di Robinson Crusoe\": the book file answered 403",
-        "ms": 228
+        "ok": true,
+        "title": "Filocolo",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 3471
       },
-      "ok": false,
-      "working": false
+      "ok": true,
+      "working": true
     },
     "wikisource-pt": {
       "name": "Wikisource (Português)",
@@ -562,7 +568,7 @@
           "ok": true,
           "count": 1,
           "covers": 0,
-          "ms": 181
+          "ms": 454
         },
         {
           "key": "contos",
@@ -570,7 +576,7 @@
           "ok": true,
           "count": 6,
           "covers": 0,
-          "ms": 118
+          "ms": 86
         },
         {
           "key": "poemas",
@@ -578,7 +584,7 @@
           "ok": true,
           "count": 8,
           "covers": 0,
-          "ms": 127
+          "ms": 63
         },
         {
           "key": "teatro",
@@ -586,21 +592,23 @@
           "ok": true,
           "count": 1,
           "covers": 0,
-          "ms": 108
+          "ms": 61
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 144
+        "ms": 84
       },
       "book": {
-        "ok": false,
-        "error": "\"Os Noivos (Alessandro Manzoni)\": the book file answered 403; \"O Macaco Cientista\": the book file answered 403; \"O Relojoeiro\": the book file answered 403",
-        "ms": 228
+        "ok": true,
+        "title": "Os Noivos (Alessandro Manzoni)",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 215
       },
-      "ok": false,
-      "working": false
+      "ok": true,
+      "working": true
     },
     "wikisource-ru": {
       "name": "Wikisource (Русский)",
@@ -612,7 +620,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 284
+          "ms": 515
         },
         {
           "key": "rasskazy",
@@ -620,7 +628,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 145
+          "ms": 97
         },
         {
           "key": "stihi",
@@ -628,7 +636,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 180
+          "ms": 122
         },
         {
           "key": "pesy",
@@ -636,21 +644,23 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 214
+          "ms": 155
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 158
+        "ms": 84
       },
       "book": {
-        "ok": false,
-        "error": "\"Братья Карамазовы (Достоевский)\": the book file answered 403; \"Обрыв (Гончаров)\": the book file answered 403; \"Картинки-невидимки (Андерсен; Ганзен)\": the book file answered 403",
-        "ms": 228
+        "ok": true,
+        "title": "Братья Карамазовы (Достоевский)",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 2529
       },
-      "ok": false,
-      "working": false
+      "ok": true,
+      "working": true
     },
     "wikisource": {
       "name": "Wikisource",
@@ -662,7 +672,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 177
+          "ms": 499
         },
         {
           "key": "stories",
@@ -670,7 +680,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 137
+          "ms": 131
         },
         {
           "key": "poems",
@@ -678,7 +688,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 170
+          "ms": 79
         },
         {
           "key": "plays",
@@ -686,21 +696,23 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 118
+          "ms": 55
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 219
+        "ms": 186
       },
       "book": {
-        "ok": false,
-        "error": "\"Les Misérables\": the book file answered 403; \"Cousin Betty\": the book file answered 403; \"Mardi\": the book file answered 403",
-        "ms": 228
+        "ok": true,
+        "title": "Les Misérables",
+        "format": "EPUB",
+        "tried": 1,
+        "ms": 848
       },
-      "ok": false,
-      "working": false
+      "ok": true,
+      "working": true
     }
   }
 }
