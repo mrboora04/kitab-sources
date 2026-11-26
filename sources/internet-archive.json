@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "internet-archive",
   "name": "Free Scanned Books",
-  "version": 6,
+  "version": 7,
   "lang": "multi",
   "license": "Free to read scans (Internet Archive)",
   "site": "https://archive.org/details/texts",
@@ -30,7 +30,7 @@
     }
   },
   "search": {
-    "url": "https://archive.org/advancedsearch.php?q=({q})%20AND%20mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29{lang}&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json",
+    "url": "https://archive.org/advancedsearch.php?q=({q})%20AND%20mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29{lang}&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=subject&fl%5B%5D=language&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json",
     "list": "response.docs",
     "pager": {
       "total": "response.numFound",
@@ -45,7 +45,8 @@
       },
       "read": {
         "tpl": "https://iiif.archive.org/iiif/3/{identifier}/manifest.json"
-      }
+      },
+      "tags": "subject"
     }
   },
   "browse": [
@@ -53,13 +54,13 @@
       "key": "popular",
       "label": "Most read",
       "about": "The most read free scans from public and university libraries",
-      "url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
+      "url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=subject&fl%5B%5D=language&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
     },
     {
       "key": "classics",
       "label": "Classics",
       "about": "Old books from the great public libraries",
-      "url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
+      "url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=subject&fl%5B%5D=language&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
     }
   ],
   "detail": {
@@ -78,5 +79,8 @@
         "tpl": "https://archive.org/download/{identifier}/{name|enc}"
       }
     }
+  },
+  "tagSearch": {
+    "url": "https://archive.org/advancedsearch.php?q=subject%3A%28%22{tag}%22%29%20AND%20mediatype%3Atexts%20AND%20-access-restricted-item%3Atrue%20AND%20collection%3A%28americana%20OR%20toronto%20OR%20europeanlibraries%20OR%20cdl%20OR%20library_of_congress%20OR%20biodiversity%20OR%20university_of_toronto%20OR%20bplscas%29&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=creator&fl%5B%5D=subject&fl%5B%5D=language&sort%5B%5D=downloads%20desc&rows=24&page={page}&output=json"
   }
 }
