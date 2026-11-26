@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "openstax",
   "name": "OpenStax Textbooks",
-  "version": 2,
+  "version": 3,
   "lang": "multi",
   "license": "Free, openly licensed college and school textbooks (CC BY)",
   "site": "https://openstax.org",
@@ -46,12 +46,12 @@
     {
       "key": "all",
       "label": "All textbooks",
-      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description,book_subjects&limit=24&offset={offset}&order=title"
+      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description,book_subjects&limit=24&offset={offset}&order=title{lang}"
     },
     {
       "key": "new",
       "label": "Newest",
-      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description,book_subjects&limit=24&offset={offset}&order=-first_published_at"
+      "url": "https://openstax.org/apps/cms/api/v2/pages/?type=books.Book&book_state=live&fields=title,cover_url,high_resolution_pdf_url,authors,description,book_subjects&limit=24&offset={offset}&order=-first_published_at{lang}"
     },
     {
       "key": "es",

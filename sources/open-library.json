@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "open-library",
   "name": "Open Library",
-  "version": 5,
+  "version": 6,
   "lang": "multi",
   "license": "Public domain: books first published in 1930 or earlier, scanned by the Internet Archive",
   "site": "https://openlibrary.org",
@@ -19,18 +19,7 @@
   "langFilter": {
     "param": "%20AND%20language%3A{v}",
     "values": {
-      "en": "eng",
-      "es": "spa",
-      "fr": "fre",
-      "de": "ger",
-      "it": "ita",
-      "pt": "por",
-      "ru": "rus",
-      "zh": "chi",
-      "ja": "jpn",
-      "ar": "ara",
-      "hi": "hin",
-      "la": "lat"
+      "en": "eng"
     }
   },
   "search": {
@@ -55,43 +44,43 @@
       "key": "popular",
       "label": "Most read",
       "about": "The most read free classics on Open Library",
-      "url": "https://openlibrary.org/search.json?q=ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     },
     {
       "key": "fiction",
       "label": "Fiction",
       "about": "Novels and stories",
-      "url": "https://openlibrary.org/search.json?q=subject_key%3Afiction%20-subject_key%3A%28juvenile_fiction%20OR%20military_art_and_science%20OR%20sex%20OR%20love%20OR%20erotic_literature%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=subject_key%3Afiction%20-subject_key%3A%28juvenile_fiction%20OR%20military_art_and_science%20OR%20sex%20OR%20love%20OR%20erotic_literature%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     },
     {
       "key": "children",
       "label": "Children",
       "about": "Children's books",
-      "url": "https://openlibrary.org/search.json?q=subject_key%3A%28juvenile_fiction%20OR%20fairy_tales%20OR%20nursery_rhymes%20OR%20children%27s_stories%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=subject_key%3A%28juvenile_fiction%20OR%20fairy_tales%20OR%20nursery_rhymes%20OR%20children%27s_stories%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     },
     {
       "key": "poetry",
       "label": "Poetry",
       "about": "Poems",
-      "url": "https://openlibrary.org/search.json?q=subject_key%3Apoetry%20-subject_key%3A%28juvenile_fiction%20OR%20fiction%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=subject_key%3Apoetry%20-subject_key%3A%28juvenile_fiction%20OR%20fiction%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     },
     {
       "key": "history",
       "label": "History",
       "about": "History",
-      "url": "https://openlibrary.org/search.json?q=subject%3AHistory%20AND%20subject_key%3A%28rome%20OR%20greece%20OR%20egypt%20OR%20europe%20OR%20india%20OR%20china%20OR%20middle_ages%20OR%20civilization%20OR%20world_history%20OR%20ancient_history%29%20-subject_key%3A%28fiction%20OR%20historical_fiction%20OR%20drama%20OR%20poetry%20OR%20economics%20OR%20religion%29%20-title%3A%22Mein%20Kampf%22%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=subject%3AHistory%20AND%20subject_key%3A%28rome%20OR%20greece%20OR%20egypt%20OR%20europe%20OR%20india%20OR%20china%20OR%20middle_ages%20OR%20civilization%20OR%20world_history%20OR%20ancient_history%29%20-subject_key%3A%28fiction%20OR%20historical_fiction%20OR%20drama%20OR%20poetry%20OR%20economics%20OR%20religion%29%20-title%3A%22Mein%20Kampf%22%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     },
     {
       "key": "science",
       "label": "Science",
       "about": "Science",
-      "url": "https://openlibrary.org/search.json?q=subject_key%3A%28science%20OR%20physics%20OR%20chemistry%20OR%20biology%20OR%20astronomy%20OR%20natural_history%20OR%20geology%20OR%20botany%20OR%20zoology%20OR%20mathematics%29%20-subject_key%3A%28fiction%20OR%20drama%20OR%20poetry%20OR%20plays%20OR%20juvenile_fiction%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=subject_key%3A%28science%20OR%20physics%20OR%20chemistry%20OR%20biology%20OR%20astronomy%20OR%20natural_history%20OR%20geology%20OR%20botany%20OR%20zoology%20OR%20mathematics%29%20-subject_key%3A%28fiction%20OR%20drama%20OR%20poetry%20OR%20plays%20OR%20juvenile_fiction%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     },
     {
       "key": "philosophy",
       "label": "Philosophy",
       "about": "Philosophy",
-      "url": "https://openlibrary.org/search.json?q=subject_key%3A%28philosophy%20OR%20ethics%20OR%20logic%20OR%20metaphysics%29%20-subject_key%3A%28fiction%20OR%20drama%20OR%20poetry%20OR%20military_art_and_science%20OR%20sex%20OR%20love%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
+      "url": "https://openlibrary.org/search.json?q=subject_key%3A%28philosophy%20OR%20ethics%20OR%20logic%20OR%20metaphysics%29%20-subject_key%3A%28fiction%20OR%20drama%20OR%20poetry%20OR%20military_art_and_science%20OR%20sex%20OR%20love%29%20AND%20ebook_access%3Apublic%20AND%20first_publish_year%3A%5B%2A%20TO%201930%5D{lang}&sort=readinglog&fields=key,title,author_name,cover_i,ia,first_publish_year,subject,language&limit=24&page={page}"
     }
   ],
   "detail": {
