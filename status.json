@@ -1,64 +1,64 @@
 {
-  "checkedAt": "2026-11-27T00:29:54.345Z",
+  "checkedAt": "2026-11-27T12:35:36.643Z",
   "sources": {
     "gutenberg": {
       "name": "Project Gutenberg",
-      "version": 5,
+      "version": 6,
       "lists": [
         {
           "key": "popular",
           "label": "Popular",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 194
+          "ms": 74
         },
         {
           "key": "latest",
           "label": "Latest",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 93
+          "ms": 29
         },
         {
           "key": "fiction",
           "label": "Fiction",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 83
+          "ms": 22
         },
         {
           "key": "children",
           "label": "Children",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 92
+          "ms": 21
         },
         {
           "key": "poetry",
           "label": "Poetry",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 79
+          "ms": 31
         },
         {
           "key": "history",
           "label": "History",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 79
+          "ms": 27
         },
         {
           "key": "science",
           "label": "Science",
           "ok": false,
           "error": "The site answered 403",
-          "ms": 74
+          "ms": 34
         }
       ],
       "search": {
         "ok": false,
         "error": "The site answered 403",
-        "ms": 88
+        "ms": 29
       },
       "book": null,
       "ok": false,
@@ -76,7 +76,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 459
+          "ms": 222
         },
         {
           "key": "en",
@@ -84,7 +84,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 3
+          "ms": 4
         },
         {
           "key": "fr",
@@ -100,7 +100,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 4
+          "ms": 3
         },
         {
           "key": "pt",
@@ -116,7 +116,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 3
+          "ms": 4
         },
         {
           "key": "zu",
@@ -124,7 +124,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 3
+          "ms": 4
         },
         {
           "key": "af",
@@ -148,7 +148,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 3
+          "ms": 2
         },
         {
           "key": "l3",
@@ -164,7 +164,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 3
+          "ms": 4
         },
         {
           "key": "l5",
@@ -179,7 +179,7 @@
       "book": {
         "ok": false,
         "error": "\"No One Has All the Wisdom\": the book file is not an EPUB or PDF (application/epub+zip); \"Kò Sí Ẹni Tó Ní Gbogbo Ọgbọ́n\": the book file is not an EPUB or PDF (application/epub+zip); \"Reitumetse o ruta 'm'e oa hae ka AI\": the book file is not an EPUB or PDF (application/epub+zip)",
-        "ms": 2074
+        "ms": 2741
       },
       "ok": false,
       "working": false
@@ -194,7 +194,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 670
+          "ms": 1376
         },
         {
           "key": "classics",
@@ -202,26 +202,26 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 3049
+          "ms": 1059
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 440
+        "ms": 385
       },
       "book": {
         "ok": true,
-        "title": "Goody Two-Shoes",
+        "title": "The Kama sutra of Vatsyayana",
         "format": "EPUB",
-        "tried": 1,
-        "ms": 19566
+        "tried": 2,
+        "ms": 14170
       },
       "pages": {
         "ok": true,
         "count": 16,
         "title": "Goody Two-Shoes",
-        "ms": 18167
+        "ms": 1349
       },
       "ok": true,
       "working": true
@@ -233,10 +233,9 @@
         {
           "key": "popular",
           "label": "Most read",
-          "ok": true,
-          "count": 24,
-          "covers": 24,
-          "ms": 2039
+          "ok": false,
+          "error": "Could not reach the site (UND_ERR_CONNECT_TIMEOUT)",
+          "ms": 10147
         },
         {
           "key": "fiction",
@@ -244,7 +243,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 743
+          "ms": 2827
         },
         {
           "key": "children",
@@ -252,7 +251,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 394
+          "ms": 329
         },
         {
           "key": "poetry",
@@ -260,7 +259,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 295
+          "ms": 379
         },
         {
           "key": "history",
@@ -268,7 +267,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 456
+          "ms": 416
         },
         {
           "key": "science",
@@ -276,7 +275,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 549
+          "ms": 517
         },
         {
           "key": "philosophy",
@@ -284,28 +283,28 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 909
+          "ms": 409
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 928
+        "ms": 2424
       },
       "book": {
         "ok": true,
         "title": "Pride and Prejudice",
         "format": "EPUB",
         "tried": 1,
-        "ms": 12274
+        "ms": 7648
       },
       "pages": {
         "ok": true,
         "count": 572,
         "title": "Pride and Prejudice",
-        "ms": 9172
+        "ms": 5061
       },
-      "ok": true,
+      "ok": false,
       "working": true
     },
     "openstax": {
@@ -318,7 +317,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 176
+          "ms": 248
         },
         {
           "key": "new",
@@ -326,7 +325,7 @@
           "ok": true,
           "count": 24,
           "covers": 24,
-          "ms": 55
+          "ms": 10
         },
         {
           "key": "es",
@@ -334,20 +333,20 @@
           "ok": true,
           "count": 11,
           "covers": 11,
-          "ms": 50
+          "ms": 8
         }
       ],
       "search": {
         "ok": true,
         "count": 3,
-        "ms": 46
+        "ms": 17
       },
       "book": {
         "ok": true,
         "title": "Additive Manufacturing Essentials",
         "format": "PDF",
         "tried": 1,
-        "ms": 310
+        "ms": 116
       },
       "ok": true,
       "working": true
@@ -362,7 +361,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 341
+          "ms": 224
         },
         {
           "key": "maerchen",
@@ -370,7 +369,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 149
+          "ms": 86
         },
         {
           "key": "lyrik",
@@ -378,7 +377,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 154
+          "ms": 84
         },
         {
           "key": "drama",
@@ -386,20 +385,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 152
+          "ms": 84
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 166
+        "ms": 90
       },
       "book": {
         "ok": true,
         "title": "Das Schloß",
         "format": "EPUB",
         "tried": 1,
-        "ms": 987
+        "ms": 802
       },
       "ok": true,
       "working": true
@@ -414,7 +413,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 303
+          "ms": 197
         },
         {
           "key": "cuentos",
@@ -422,7 +421,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 136
+          "ms": 79
         },
         {
           "key": "poemas",
@@ -430,7 +429,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 170
+          "ms": 114
         },
         {
           "key": "teatro",
@@ -438,20 +437,20 @@
           "ok": true,
           "count": 6,
           "covers": 0,
-          "ms": 128
+          "ms": 73
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 148
+        "ms": 106
       },
       "book": {
         "ok": true,
         "title": "Atalaya de la vida humana",
         "format": "EPUB",
         "tried": 1,
-        "ms": 589
+        "ms": 595
       },
       "ok": true,
       "working": true
@@ -466,7 +465,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 208
+          "ms": 273
         },
         {
           "key": "contes",
@@ -474,7 +473,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 142
+          "ms": 78
         },
         {
           "key": "poemes",
@@ -482,7 +481,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 141
+          "ms": 76
         },
         {
           "key": "theatre",
@@ -490,20 +489,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 139
+          "ms": 77
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 159
+        "ms": 82
       },
       "book": {
         "ok": true,
         "title": "Vie et opinions de Tristram Shandy",
         "format": "EPUB",
         "tried": 1,
-        "ms": 3388
+        "ms": 3235
       },
       "ok": true,
       "working": true
@@ -518,7 +517,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 240
+          "ms": 189
         },
         {
           "key": "racconti",
@@ -526,7 +525,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 142
+          "ms": 77
         },
         {
           "key": "poesie",
@@ -534,7 +533,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 146
+          "ms": 93
         },
         {
           "key": "teatro",
@@ -542,20 +541,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 142
+          "ms": 106
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 136
+        "ms": 106
       },
       "book": {
         "ok": true,
         "title": "Filocolo",
         "format": "EPUB",
         "tried": 1,
-        "ms": 3611
+        "ms": 3172
       },
       "ok": true,
       "working": true
@@ -570,7 +569,7 @@
           "ok": true,
           "count": 1,
           "covers": 0,
-          "ms": 217
+          "ms": 138
         },
         {
           "key": "contos",
@@ -578,7 +577,7 @@
           "ok": true,
           "count": 6,
           "covers": 0,
-          "ms": 129
+          "ms": 56
         },
         {
           "key": "poemas",
@@ -586,7 +585,7 @@
           "ok": true,
           "count": 8,
           "covers": 0,
-          "ms": 131
+          "ms": 80
         },
         {
           "key": "teatro",
@@ -594,20 +593,20 @@
           "ok": true,
           "count": 1,
           "covers": 0,
-          "ms": 122
+          "ms": 88
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 141
+        "ms": 101
       },
       "book": {
         "ok": true,
         "title": "Os Noivos (Alessandro Manzoni)",
         "format": "EPUB",
         "tried": 1,
-        "ms": 195
+        "ms": 172
       },
       "ok": true,
       "working": true
@@ -622,7 +621,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 291
+          "ms": 185
         },
         {
           "key": "rasskazy",
@@ -630,7 +629,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 155
+          "ms": 98
         },
         {
           "key": "stihi",
@@ -638,7 +637,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 155
+          "ms": 107
         },
         {
           "key": "pesy",
@@ -646,20 +645,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 236
+          "ms": 177
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 150
+        "ms": 134
       },
       "book": {
         "ok": true,
         "title": "Братья Карамазовы (Достоевский)",
         "format": "EPUB",
         "tried": 1,
-        "ms": 2639
+        "ms": 2539
       },
       "ok": true,
       "working": true
@@ -674,7 +673,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 230
+          "ms": 138
         },
         {
           "key": "stories",
@@ -682,7 +681,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 172
+          "ms": 106
         },
         {
           "key": "poems",
@@ -690,7 +689,7 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 148
+          "ms": 80
         },
         {
           "key": "plays",
@@ -698,20 +697,20 @@
           "ok": true,
           "count": 24,
           "covers": 0,
-          "ms": 134
+          "ms": 96
         }
       ],
       "search": {
         "ok": true,
         "count": 24,
-        "ms": 230
+        "ms": 340
       },
       "book": {
         "ok": true,
         "title": "Les Misérables",
         "format": "EPUB",
         "tried": 1,
-        "ms": 699
+        "ms": 801
       },
       "ok": true,
       "working": true
