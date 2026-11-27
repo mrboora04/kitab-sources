@@ -145,9 +145,14 @@ for (const { def, builtin } of defs) {
   // a source is "working" when you can open a list or search, and download a book
   r.working = !!r.skipped || ((r.lists.some((x) => x.ok) || r.search?.ok) && !!r.book?.ok);
   // Some sites (behind Cloudflare) refuse GitHub's servers but not phones: that says nothing about the source
-  if (!r.working && parts.length && parts.every((x) => !x.ok && /answered 403/.test(x.error))) {
+  // Some sites refuse GitHub's servers (Cloudflare, anti-bot walls) but not phones: when every failure is a 403
+  // "refused", that says nothing about the source, so it is reported as not checkable rather than broken
+  const failed = parts.filter((x) => !x.ok);
+  if (!r.working && failed.length && failed.every((x) => /answered 403/.test(x.error) && !/answered (?!403)\d{3}|not an EPUB|no EPUB|empty|reach/.test(x.error))) {
     r.working = null;
-    r.blocked = 'The site refuses requests from GitHub\'s servers, so it cannot be checked from here (phones are not affected)';
+    r.blocked = failed.length === parts.length
+      ? 'The site refuses requests from GitHub\'s servers, so it cannot be checked from here (phones are not affected)'
+      : 'Lists and search work; the book files refuse GitHub\'s servers, so downloads cannot be checked from here (phones are not affected)';
   }
   if (builtin) r.builtin = true;
   status.sources[def.id] = r;
